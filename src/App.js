@@ -3,12 +3,10 @@ import RecipeList from './Components/RecipeList';
 
 import './App.css';
 
-
-
 const App = () => {
 
-  const APP_ID = ``;
-  const APP_KEY = ``;
+  const APP_ID = process.env.REACT_APP_APP_ID;
+  const APP_KEY = process.env.REACT_APP_APP_KEY;
 
   const [recipes, setRecipes] = useState([]);
   const [search, setSearch] = useState('')
