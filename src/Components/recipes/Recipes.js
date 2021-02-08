@@ -9,7 +9,7 @@ const Recipes = ({ title, calories, image, ingredients }) => {
                 <li key={uuid()} className="ingredientList">{ingredient.text}</li>
             ))}</ol>
             <p className="calories">{parseInt(calories)} calories per serving</p>
-            <img className="image" src={image} />
+            <img className="image" src={image} alt={title} />
         </div>
     )
 }
